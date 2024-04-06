@@ -1,0 +1,1078 @@
+.box {
+
+ 
+  margin: 20px 0;
+  width: 100%;
+  min-height: 350px;
+
+ 
+}
+.immp{
+  width: 100%;
+  height: 350px;
+  position: relative;
+}
+.Productsbox {
+  background: #f1f9ff;
+  min-height: 200px;
+  margin: 50px 0px 50px;
+  color: black;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.buttto{
+  border-radius: 30px;
+  margin-top: 10px;
+  width: 220px ;
+}
+
+.fontt{
+  font-weight: 80px;
+}
+
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+/* DEMO GENERAL ============================== */
+.hover {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 60%;
+}
+
+.hover-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  transition: all 0.4s;
+}
+
+.hover img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.hover-content {
+  position: relative;
+  z-index: 99;
+}
+
+
+/* DEMO 1 ============================== */
+.hover-1 img {
+  width: 105%;
+  position: absolute;
+  top: 0;
+  left: -5%;
+  transition: all 0.3s;
+}
+
+.hover-1-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  transition: all 0.4s;
+}
+
+
+.hover-1-description {
+  transform: translateY(0.5rem);
+  transition: all 0.4s;
+  opacity: 0;
+}
+
+.hover-1:hover .hover-1-content {
+  bottom: 2rem;
+}
+
+.hover-1:hover .hover-1-description {
+  opacity: 1;
+  transform: none;
+  ;
+  
+}
+
+.hover-1:hover img {
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+ 
+}
+
+.hover-1:hover .hover-overlay {
+  opacity: 10;
+  background: rgba(0, 0, 0, 0.5);
+  
+  
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.productmarging{
+  padding-bottom: 20px !important;
+}
+
+
+
+
+
+
+
+  .flex-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+  
+  .title__text {
+    color: var(--primary-text-color-2);
+    display: inline-block;
+    font-size: 40px;
+  }
+  
+  .--title__text-underline {
+    position: relative;
+  }
+  
+  .--title__text-underline:after {
+    content: "";
+    display: block;
+    opacity: 0.7;
+    height: 4px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    border-radius: 24%;
+    width: 100%;
+  }
+  
+
+  .dest-text::after {
+    background-color: rgba(66, 102, 202, 0.70);
+  }
+  
+  .sectionn {
+    position: relative;
+    z-index: 3;
+    padding-bottom: 50px;
+}
+  
+  .dest__wrap {
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    margin: 60px auto 0;
+  }
+  
+
+  .holiday-text::after {
+    background-color: rgba(66, 102, 202, 0.70);
+  }
+
+  
+  /* END DESTINATION */
+  
+  /* START NEXT HOLIDAY */
+  .next-holiday {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    height: 204px;
+    width: 100%;
+    background: no-repeat center / cover
+      url(https://leloc90.github.io/loveTravel/assets/images/parallax-search-2.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .next-holiday > * {
+    width: 32%;
+  }
+  
+  .next-holiday__text-wrap {
+    font-size: 46px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1;
+  }
+  
+  .next-holiday__text-2 {
+    display: inline;
+  }
+  
+  .next-holiday__btn-wrap {
+    text-align: center;
+  }
+  .next-holiday__btn {
+    color: rgba(66, 102, 202, 0.70);
+    background-color: #fff;
+    padding: 8px 40px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+
+  }
+  
+  /* END NEXT HOLIDAY */
+  
+  /* TOURS */
+  .tours__container {
+    
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .tours__beaches {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .beaches__info {
+    width: 32%;
+    padding: 12px;
+    align-self: flex-start;
+  }
+  
+  .beaches__desc {
+    font-size: 14px;
+    color: var(--primary-text-color);
+    margin: 16px 0;
+    line-height: 1.8;
+    letter-spacing: 1px;
+  }
+  
+  .beaches__price {
+    margin-top: 24px;
+  }
+  
+  .beaches__old-price {
+    font-size: 30px;
+    color: #dadada;
+    text-decoration: line-through;
+    margin-right: 12px;
+  }
+  
+  .beaches__new-price {
+    font-size: 30px;
+    color: var(--primary-text-color-2);
+  }
+  
+  .beaches__price-person {
+    font-size: 14px;
+    color: var(--primary-text-color-2);
+  }
+  
+  .beaches__btn {
+    background-color: #14b9d5;
+    text-decoration: none;
+    padding: 6px 22px 4px;
+    font-size: 12px;
+    border-radius: 10px;
+    margin-top: 24px;
+    color: white!important;
+  }
+  
+  /* Beach wrap */
+  .beaches__wrap {
+    width: 65%;
+    padding: 12px;
+    position: relative;
+  }
+  
+  .beaches__bullets {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .beaches__bullets-item {
+    display: inline-block;
+    width: 60px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    z-index: 2;
+    margin: 0 4px;
+  }
+  
+  .beaches__bullets-item:hover {
+    background-color: #fff;
+  }
+  
+  .beaches__img-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: unset;
+  }
+  
+  .beaches__img-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .beaches__img-main {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+  }
+  
+  .beaches__img-1 {
+    background: no-repeat center / cover
+      url(https://www.travellersofindia.com/wp-content/uploads/2022/08/Cafes_in_Andaman_and_Nicobar-Islands_travellersofindia.com_-1536x1152.jpg);
+  }
+  
+  .beaches__img-2 {
+    background: no-repeat center / cover
+      url(https://leloc90.github.io/loveTravel/assets/images/parallax-4-1.jpg);
+  }
+  
+  .beaches__img-3 {
+    background: no-repeat center / cover
+      url(https://leloc90.github.io/loveTravel/assets/images/package-3.jpg);
+  }
+  
+  .beaches__wrap-time {
+    background-color: #14b9d5;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 36%);
+  }
+  
+  .time__block {
+    width: 120px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    position: relative;
+  }
+  
+  .time__block:not(:first-child)::after {
+    content: "";
+    display: block;
+    background-color: rgba(0, 0, 0, 0.08);
+    position: absolute;
+    left: 0;
+    width: 3px;
+    height: 64%;
+    transform: rotate(12deg);
+  }
+  
+  .time__number {
+    font-size: 32px;
+  }
+  
+  .time__text {
+    font-size: 13px;
+  }
+  /* Tour list */
+  .tours__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+  }
+  
+  .tours__item {
+    width: 30%;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .tours__item img {
+    width: 46px;
+    height: 46px;
+    margin-right: 12px;
+  }
+  
+  .tours__info {
+    letter-spacing: 1px;
+  }
+  
+  .tours__info h5 {
+    font-size: 20px;
+    color: var(--primary-text-color-2);
+  }
+  
+  .tours__info p {
+    font-size: 13px;
+    color: var(--primary-text-color);
+    margin: 12px 0;
+  }
+  
+  .tours__info a {
+    text-decoration: none;
+    color: #14b9d5;
+    font-size: 12px;
+  }
+  
+  /* END TOURS */
+  
+  /* START DISCOVER */
+  
+  .discover__container {
+    margin: 60px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .discover__img-1 {
+    background: no-repeat center / cover
+      url(https://i.pinimg.com/564x/d6/62/c1/d662c1c1725a7d182c1712d9f1ee106c.jpg);
+  }
+  
+  .discover__img-2 {
+    background: no-repeat center / cover
+      url(https://i.pinimg.com/564x/ac/e5/ed/ace5ed785beb820ccbf5f202bf5bf3f7.jpg);
+  }
+  
+  .discover__item {
+    flex: 1;
+    height: 248px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+  }
+  
+  .discover__item p {
+    font-size: 13px;
+    color: #fff;
+  }
+  
+  .discover__item h4 {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .discover__item a {
+    text-decoration: none;
+    padding: 8px 36px 6px;
+    background-color: #fff;
+    border-radius: 30px;
+    font-size: 14px;
+  }
+  
+  .discover__btn-1 {
+    color: #f3a46b;
+  }
+  
+  .discover__btn-2 {
+    color: #1bbc9b;
+  }
+  
+  /* END DISCOVER */
+  
+  /* START PROMOTION */
+  
+  .promotion__container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .promotion__wrap {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .promotion__item {
+    width: 33%;
+    padding: 12px;
+
+  }
+  
+  .promotion__item-img {
+    width: 100%;
+    padding-top: 60%;
+    position: relative;
+  }
+  
+  .--item-img-1 {
+    background: no-repeat center / cover
+      url(https://i.pinimg.com/564x/47/e2/8c/47e28cb37314c93cdb615ff64bd2c0e5.jpg);
+  }
+  
+  .promotion__item-sticker-1,
+  .promotion__item-sticker-2,
+  .promotion__item-sticker-3 {
+    --sticker-size: 50px;
+    position: absolute;
+    bottom: -25px;
+    right: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    width: var(--sticker-size);
+    height: var(--sticker-size);
+  }
+  
+  .promotion__item-sticker-1 {
+    background: linear-gradient(to right, #14b9d5 0%, #1d464b 100%);
+  }
+  
+  .sticker__img {
+    transform: translateY(36%);
+    width: 54%;
+  }
+  
+  .promotion__item-info {
+    margin-top: 20px;
+    text-align: left;
+    padding: 0 20px;
+    border: 2px solid #f1f1f1;
+    border-top: none;
+  }
+  
+  .promotion__item-head {
+    letter-spacing: 0px;
+  }
+  .hhh{
+    width: 200px;
+    height: 35px;
+  }
+  .promotion__item-head h5 {
+    font-size: 20px;
+    color: var(--primary-text-color-2);
+  }
+  
+  .promotion__item-thema {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  
+  .promotion__item-thema-text {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--primary-text-color-2);
+  }
+  
+  .promotion__item-thema-text span {
+    display: inline-block;
+    padding: 1px 8px 1px;
+    border-radius: 14px;
+    font-size: 10px;
+    color: #fff;
+    line-height: 1.4;
+    margin-left: 12px;
+    transform: translateY(-2px);
+  }
+  
+  .promotion__item-thema-price {
+    font-size: 24px;
+    color: var(--primary-text-color-2);
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    font-size: 20px;
+    opacity: 0.8;
+  }
+  
+  .promotion__item-desc {
+    margin-top: 20px;
+    font-size: 15px;
+    color: var(--primary-text-color);
+    line-height: 2;
+    letter-spacing: 1px;
+  }
+  
+
+  .promotion-btn-1 {
+    padding: 5px 15px 4px;
+    font-size: 13px;
+    margin: 20px 0;
+    
+  }
+  
+  .promotion-btn-1 {
+    background-color: #14b9d5;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+  }
+  /* END PROMOTION */
+
+  
+  
+  
+
+  
+  /* Desktop small */
+  @media (min-width: 1024px) and (max-width: 1208px) {
+    .header__logo {
+      margin-left: 32px;
+      margin-right: 32px;
+    }
+  
+    .navbar__btn {
+      margin-left: 32px;
+    }
+  
+    .navbar__link {
+      padding: 8px 8px 6px;
+    }
+  
+  
+  }
+  
+  /* Desktop*/
+  @media (min-width: 1024px) {
+    .hide-on-desktop {
+      display: none;
+    }
+  }
+  
+  /* Desktop & Tablet */
+  @media (min-width: 740px) {
+    .hide-on-desktop-tablet {
+      display: none;
+    }
+  }
+  
+  /* Tablet */
+  @media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+      display: none;
+    }
+  
+    .theme__container {
+      background-position: -820px -162px;
+    }
+  
+    .header__logo img {
+      width: 72px;
+    }
+  
+    .theme__img > img {
+      width: 100%;
+      transform: scale(1.4);
+      opacity: 0.9;
+    }
+  
+    .theme__holiday {
+      top: 54%;
+    }
+  
+    .holiday__title {
+      font-size: 46px;
+      margin-bottom: 14px;
+    }
+  
+    .holiday__text {
+      font-size: 24px;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+  
+    .holiday__search {
+      width: 100%;
+      padding: 18px 24px;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+  
+    .holiday__search-btn {
+      font-size: 20px;
+    }
+  
+    .holiday__choose-wrap {
+      width: 80%;
+      flex-wrap: wrap;
+    }
+  
+    .holiday__choose-item {
+      width: 48%;
+      height: 140px;
+      margin-top: 20px;
+    }
+  
+    .holiday__choose-item img {
+      width: 50%;
+    }
+  
+    .holiday__choose-item span {
+      font-size: 20px;
+    }
+  
+    .dest__wrap {
+      width: 90%;
+    }
+  
+    .dest__item-flex {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  
+    .next-holiday {
+      justify-content: space-around;
+    }
+  
+    .next-holiday__text-wrap {
+      padding-left: 24px;
+    }
+  
+    .next-holiday__btn {
+      font-size: 16px;
+    }
+  
+    .tours__container {
+      width: 90%;
+    }
+  
+    .beaches__wrap-time {
+      height: 100px;
+      left: 12px;
+      right: 12px;
+      bottom: -80px;
+      transform: translate(0, 0);
+    }
+  
+    .tours__item {
+      width: 33%;
+    }
+  
+    .promotion__container {
+      width: 90%;
+    }
+  }
+  
+  /* Tablet & Mobile */
+  @media (max-width: 1023px) {
+    .hide-on-tablet-mobile {
+      display: none;
+    }
+  
+    header {
+      position: relativ;
+    }
+  
+    .header__menu-icon {
+      font-size: 60px;
+      margin-left: 0;
+      margin-right: 50px;
+    }
+  
+    .header__logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0;
+    }
+  
+    .sub-menu__check:checked ~ .sub-menu-tablet-mobile {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  
+    .dest__list {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .tours__beaches {
+      flex-wrap: wrap;
+    }
+  
+    .beaches__info,
+    .beaches__wrap {
+      width: 100%;
+    }
+  
+    .beaches__wrap {
+      margin-top: 24px;
+    }
+  
+    .tours__list {
+      margin-top: 120px;
+      flex-wrap: wrap;
+    }
+  
+    .tours__item {
+      width: 100%;
+    }
+  
+    .tours__info p {
+      font-size: 16px;
+    }
+  
+    .tours__info a {
+      font-size: 14px;
+    }
+  
+    .discover__container {
+      flex-wrap: wrap;
+    }
+  
+    .discover__item {
+      flex: unset;
+      height: 300px;
+      width: 100%;
+    }
+  
+    .discover__item p {
+      font-size: 16px;
+    }
+  
+    .discover__item h4 {
+      font-size: 36px;
+    }
+  
+    .discover__item a {
+      font-size: 16px;
+    }
+  
+    .promotion__wrap {
+      flex-wrap: wrap;
+    }
+  
+    .promotion__item {
+      width: 100%;
+    }
+  
+    .promotion__item-head h5 {
+      font-size: 26px;
+    }
+  
+    .sub-menu__place-info p,
+    .promotion__item-head p {
+      font-size: 16px;
+    }
+  
+    .promotion__item-thema-text {
+      font-size: 16px;
+    }
+  
+    .promotion__item-thema-price {
+      font-size: 28px;
+    }
+  
+    .promotion__item-desc {
+      font-size: 16px;
+    }
+  
+    .promotion-btn-1,
+    .promotion-btn-2,
+    .promotion-btn-3 {
+      padding: 7px 36px 6px;
+      font-size: 18px;
+    }
+  
+  
+    .dest__item:active .dest__overlay {
+      opacity: 1;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 739px) {
+    .hide-on-mobile {
+      display: none;
+    }
+  
+    .title__text {
+      font-size: 32px;
+    }
+  
+    .theme__container {
+      height: 600px;
+      background-position: -1174px -191px;
+    }
+  
+    header {
+      height: 74px;
+    }
+  
+    .header__logo img {
+      width: 52px;
+    }
+  
+    .header__menu-icon {
+      font-size: 32px;
+      margin-right: 24px;
+    }
+  
+    .theme__img > img {
+      transform: scale(1.6);
+    }
+  
+    .theme__holiday {
+      top: 54%;
+    }
+  
+    .holiday__title {
+      font-size: 36px;
+      margin-bottom: 14px;
+    }
+  
+    .holiday__text {
+      font-size: 16px;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+  
+    .holiday__search {
+      width: 100%;
+      padding: 14px 20px;
+      margin-bottom: 18px;
+      font-size: 14px;
+    }
+  
+    .holiday__search-btn {
+      font-size: 18px;
+    }
+  
+    .holiday__choose-wrap {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  
+    .holiday__choose-item {
+      width: 48%;
+      height: 100px;
+      margin-top: 12px;
+    }
+  
+    .holiday__choose-item img {
+      width: 36%;
+    }
+  
+    .holiday__choose-item span {
+      font-size: 14px;
+    }
+  
+    .dest__item-flex {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    .dest__wrap {
+      width: 96%;
+    }
+  
+    .next-holiday {
+      flex-direction: column;
+      height: 248px;
+    }
+  
+    .next-holiday__text-wrap {
+      font-size: 32px;
+      align-self: flex-start;
+      padding-left: 30px;
+    }
+  
+    .next-holiday__text-2::after {
+      width: 99%;
+      height: 4px;
+      bottom: 8px;
+    }
+  
+    .next-holiday__btn {
+      padding: 6px 26px;
+      font-size: 14px;
+    }
+  
+    .next-holiday__btn-wrap {
+      padding-top: 42px;
+      width: 100%;
+    }
+  
+    .tours__container {
+      width: 96%;
+    }
+  
+    .beaches__bullets-item {
+      width: 48px;
+    }
+  
+    .beaches__wrap-time {
+      height: 198px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      bottom: -140px;
+      left: 12px;
+      right: 12px;
+      transform: translate(0, 0);
+    }
+  
+    .time__block:nth-child(3)::after {
+      display: none;
+    }
+  
+    .time__block {
+      width: 50%;
+    }
+  
+    .tours__list {
+      margin-top: 160px;
+    }
+  
+    .promotion__container {
+      width: 96%;
+    }
+  }
+
+  

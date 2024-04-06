@@ -1,0 +1,164 @@
+.boxxx {
+  margin: 10px;
+  width: 100%;
+  min-height: 200px;
+}
+
+.buttonasfd{
+  margin-top: 200px;
+}
+.btnss{
+  background-color:#14b9d5 ;
+
+
+  
+  color: white;
+  padding: 5px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+}
+
+.grid > article {
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.grid > article img {
+  max-width: 100%;
+  border-radius: 1em 1em 0 0;
+}
+
+.grid .text {
+  padding: 20px;
+}
+
+
+
+
+
+.ul {
+  clear: both;
+	position: fixed;
+	display: block;
+	list-style-type: none;
+	right: -3.2em;
+	top: 25%;
+	-webkit-animation: slideright 1s forwards;
+	-webkit-animation-delay: 1.5s;
+	animation: slideright 1s forwards;
+	animation-delay: 1.5s; 
+}
+
+@keyframes slideright {
+	100% {
+		right: 0;
+	}
+}
+
+.li {
+  margin-bottom: 40px;
+  margin-right: -20px;
+  padding: 15px;
+  -webkit-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+ 	background-color: #14b9d5;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
+	-webkit-transition: width .5s, background-color .1s;
+	transition: width .5s, background-color .1s;
+
+}
+
+.li a {
+	font-size: 19px;
+	text-transform: none;
+	text-align: center;
+  text-decoration: none;
+	color: #ebebeb;
+}
+
+.li:hover {
+	background-color: #107081;
+	color: #fff;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1740px) {
+  .lll{
+    padding-top: 150px;
+  }
+  .div5{
+    padding-top: 50px;
+
+  }
+}
+@media (min-width: 0) and (max-width: 600px) {
+  .lll{
+    padding-top: 9px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1000px) {
+  .lll{
+    padding-top: 9px;
+  }
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.8px);
+  -webkit-backdrop-filter: blur(6.8px);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  overflow-y: scroll;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup .close {
+  position: absolute;
+  top: 22%;
+  right: 10%;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
